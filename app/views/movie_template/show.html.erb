@@ -1,0 +1,61 @@
+<h1><%= @movie.title %></h1>
+<dl>
+  <dt>
+    Image
+  </dt>
+  <dd>
+    <img src="<%= @movie.image %>" style="width:250px;">
+  </dd>
+
+  <dt>
+    Released On
+  </dt>
+  <dd>
+    <%= @movie.released_on %>
+  </dd>
+
+  <dt>
+    Nomination Year
+  </dt>
+  <dd>
+    <%= @movie.year %>
+    (<%= @movie.oscar_cohort %>th Oscars)
+  </dd>
+
+  <dt>
+    Best Picture Result
+  </dt>
+  <dd>
+    
+  </dd>
+
+  <dt>
+    Duration
+  </dt>
+  <dd>
+    <%= @movie.duration %> minutes
+  </dd>
+
+  <dt>
+    Description
+  </dt>
+  <dd>
+    <%= @movie.description %>
+  </dd>
+
+  <dt>
+    Director
+  </dt>
+  <dd>
+    <a href="/directors/<%= @movie.director_id %>">
+      <%= @director_name %>
+    </a>
+  </dd>
+
+  <dt>
+    Internal ID
+  </dt>
+  <dd>
+    <%= @movie.id %>
+  </dd>
+</dl>
