@@ -1,0 +1,11 @@
+<h1>List of directors</h1>
+<ul>
+  <% @directors.each do |director| %>
+    <li>
+      <a href="/directors/<%= director.id %>">
+        <img src="<%= director.image %>" width="100">
+        <%= director.first_name %>, <%= director.last_name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
