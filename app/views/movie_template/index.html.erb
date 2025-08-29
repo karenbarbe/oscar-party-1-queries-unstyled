@@ -5,6 +5,9 @@
       <a href="/movies/<%= movie.id%>">
         <img src="<%= movie.image%>" width="100">
         <%= movie.title%> (<%= movie.year%>)
+        <% if movie.result == "won" %>
+          🏆
+        <% end %>
       </a>
     </li>
   <% end %>
